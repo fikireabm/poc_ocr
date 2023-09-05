@@ -79,7 +79,7 @@ class _OcrHomeState extends State<OcrHome> {
       // final List<Point<int>> cornerPoints = block.cornerPoints;
       final String text = block.text;
 
-      if (text.contains("B.No.") || text.contains("B.No. ")) {
+      if (text.contains("B.No.") || text.contains("B.No. ") || text.contains("Batch No.") || text.contains("Batch No. ")) {
         result = '\n$text\n';
       } else {
         print("Substring not found.");
